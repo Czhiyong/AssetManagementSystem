@@ -1,0 +1,15 @@
+Models/bin/Debug/*.pdb
+Models/bin/Debug/*.xml
+Models/bin/Release
+Models/obj
+AssetManagementSystem/bin/Debug/*.pdb
+AssetManagementSystem/bin/Debug/*.exe
+AssetManagementSystem/bin/Debug/*.xml
+AssetManagementSystem/bin/Release
+AssetManagementSystem/obj
+AssetManagementSystem/TestResults
+Test/bin/Debug/*.pdb
+Test/bin/Debug/*.xml
+Test/bin/Release
+Test/obj
+TestResults
