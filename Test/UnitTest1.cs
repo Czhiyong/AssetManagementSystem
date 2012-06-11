@@ -3,8 +3,7 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AssetManagementSystem.AssetClass;
-using AssetManagementSystem;
+using models;
 
 namespace Test
 {
@@ -62,35 +61,11 @@ namespace Test
         #endregion
 
         [TestMethod]
-        public void AssetTest1()
+        public void TestMethod1()
         {
-            //
-            // TODO: 在此处添加测试逻辑
-            //
-           Asset asset = new Asset();
-           Assert.AreEqual("computer", asset.Name);
-
-        }
-        [TestMethod]
-        public void AssetTest2()
-        {
-            //
-            // TODO: 在此处添加测试逻辑
-            //
-            Asset asset = new Asset();
-            asset.AddAmount(3);
-            Assert.AreEqual(3, asset.Amount);
-
-        }
-        [TestMethod]
-        public void RolesTest3()
-        {
-            //
-            // TODO: 在此处添加测试逻辑
-            //
-            Role role = new Role();
-            Assert.AreEqual("张三", role.Buyer);
-
+            Accessor accessor = Accessor.Instance;
+            Text test = new Text { id = 0, name = "abc" };
+            accessor.CreateTest(test);
         }
     }
 }

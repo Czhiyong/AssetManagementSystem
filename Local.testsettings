@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TestSettings name="本地" id="d7fedd74-afed-4d1e-accb-31c59a1d3e95" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<TestSettings name="本地" id="2863ebaf-3d98-4eb7-93a0-ab1dbeb5a12b" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Description>这些设置为本地测试运行的默认测试设置。</Description>
   <Deployment enabled="false" />
   <Execution>

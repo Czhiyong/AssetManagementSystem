@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TestSettings name="跟踪和测试影响" id="725a3f61-5960-4f57-a141-581ac9750d5c" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<TestSettings name="跟踪和测试影响" id="62afb286-6a81-4eba-947c-89d3392f3858" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Description>这些设置为跟踪和测试影响的测试设置。</Description>
   <Execution>
     <TestTypeSpecific />

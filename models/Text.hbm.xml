@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+   assembly="models"
+   namespace="models">
+
+  <class name ="Text" table="Test">
+    <id name="id" ></id>
+    <property name ="name"/>
+
+
+  </class>
+</hibernate-mapping>
