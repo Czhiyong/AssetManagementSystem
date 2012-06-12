@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+   assembly="models"
+   namespace="models">
+
+  <class name ="assetimformation">
+    <id name="id" ></id>
+    <property name ="name"/>
+    <property name ="buydate"/>
+    <property name ="sort"/>
+    <property name ="amount"/>
+    <property name ="price"/>
+    <property name ="safedepartment"/>
+    <property name ="safeplace"/>
+    <property name ="usedepatment"/>
+    <property name ="depreciation"/>
+  </class>
+</hibernate-mapping>

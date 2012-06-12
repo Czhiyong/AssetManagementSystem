@@ -5,6 +5,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using models;
 
+
 namespace Test
 {
     /// <summary>
@@ -60,12 +61,42 @@ namespace Test
         //
         #endregion
 
+
+
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethod2()
         {
             Accessor accessor = Accessor.Instance;
-            Text test = new Text { id = 0, name = "abc" };
-            accessor.CreateTest(test);
+            Users user = new Users { id = 0, name = "abc", role = "abc" ,password = 123456 ,email = "1548@.com"};
+            accessor.CreateUser(user);
         }
+
+
+        //[TestMethod]
+        //public void TestMethod4()
+        //{
+        //    Accessor accessor = Accessor.Instance;
+        //    assetdelete adelete = new assetdelete { id = 0, name = "abc", safedepartment = "12", deleteperson = "oii", deletedate = "20120514", type = "eii" };
+        //    accessor.Createassetdelete(adelete);
+        //}
+        //[TestMethod]
+        //public void TestMethod5()
+        //{
+        //    Accessor accessor = Accessor.Instance;
+        //    assetimformation aimformation = new assetimformation
+        //    {
+        //        id = 0,
+        //        name = "abc",
+        //        buydate = "20120525",
+        //        sort = "oii",
+        //        amount = 2154,
+        //        price = 566,
+        //        safedepartment = "eii",
+        //        safeplace = "eii",
+        //        usedepatment = "wieg",
+        //        depreciation = "eii"
+        //    };
+        //    accessor.Createassetimformation(aimformation);
+        //}
     }
 }

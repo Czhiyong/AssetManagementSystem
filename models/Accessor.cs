@@ -25,11 +25,24 @@ namespace models
             }
         }
 
-        public void CreateTest(Text test)
+        public void CreateUser(Users user)
         {
-            session.Save(test);
+            session.Save(user);
             session.Flush();
         }
-    
+
+
+        public void Createassetdelete(assetdelete adelete)
+        {
+            session.Save(adelete);
+            session.Flush();
+            
+        }
+        public void Createassetimformation(assetimformation aimformation)
+        {
+            session.Save(aimformation);
+            session.Flush();
+
+        }
     }
 }
