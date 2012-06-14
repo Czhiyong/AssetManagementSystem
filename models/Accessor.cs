@@ -101,5 +101,21 @@ namespace models
             session.Update(aimformation);
             session.Flush();
         }
+        public IList<assetimformation> CreateCriteria2()  
+        {
+            ICriteria crit2 = session.CreateCriteria(typeof(assetimformation));
+            crit2.SetMaxResults(100);
+            IList<assetimformation> asset = crit2.List<assetimformation>();
+            return asset;
+        }
+        public IList<assetimformation> GetAssetByDepartmentname(string Departmentname)
+        {
+            return session.CreateCriteria(typeof(assetimformation))
+               .Add(Restrictions.Eq("safedepartment", Departmentname))
+               .List<assetimformation>();
+        }
+
+
+       
     }
 }

@@ -109,12 +109,43 @@ namespace Test
         //    accessor.UpdateUsers(user);
         //}
         //[TestMethod]
-        ////public void TestMethod8()
-        ////{
-        ////    Accessor accessor = Accessor.Instance;
-        ////    IList<Users> s = accessor.GetUsersByFirstname("ziji");
-        ////    Assert.AreEqual(2, s.Count);
-            
-        ////}
+        //public void TestMethod8()
+        //{
+        //    Accessor accessor = Accessor.Instance;
+        //    IList<Users> s = accessor.GetUsersByFirstname("ziji");
+        //    Assert.AreEqual(2, s.Count);
+
+        //}
+
+        //[TestMethod]
+        //public void TestMethod8()
+        //{
+        //    Accessor accessor = Accessor.Instance;
+        //    assetimformation aimformation = new assetimformation {  price = 2, safedepartment = "宣传部" };
+        //    accessor.Createassetimformation(aimformation); 
+
+        //}
+        [TestMethod]
+        public void TestMethod9()
+        {
+            Accessor accessor = Accessor.Instance;
+            IList<assetimformation> s = accessor.GetAssetByDepartmentname("dgf");
+            Assert.AreEqual(45, s[0].price);
+
+        }
+
+        [TestMethod]
+        public void TestMethod10()
+        {
+            Accessor accessor = Accessor.Instance;
+            IList<Users> s = accessor.GetUsersByFirstname("wo");
+            Assert.AreEqual("部门经理", s[0].role);
+
+        }
+
+        private IList<assetimformation> GetAssetByDepartmentname(string p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
