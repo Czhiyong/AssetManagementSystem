@@ -22,3 +22,10 @@ namespace WindowsFormsApplication1
         }
     }
 }
+
+namespace AssetManagementSystem
+{
+    public class Register
+    {
+    }
+}

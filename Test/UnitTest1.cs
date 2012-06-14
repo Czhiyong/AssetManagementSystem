@@ -63,13 +63,13 @@ namespace Test
 
 
 
-        [TestMethod]
-        public void TestMethod2()
-        {
-            Accessor accessor = Accessor.Instance;
-            Users user = new Users { id = 0, name = "abc", role = "abc" ,password = 123456 ,email = "1548@.com"};
-            accessor.CreateUser(user);
-        }
+        //[TestMethod]
+        //public void TestMethod2()
+        //{
+        //    Accessor accessor = Accessor.Instance;
+        //    Users user = new Users { id = 0, name = "abc", role = "abc" ,password = 123456 ,email = "1548@.com"};
+        //    accessor.CreateUser(user);
+        //}
 
 
         //[TestMethod]
@@ -98,5 +98,23 @@ namespace Test
         //    };
         //    accessor.Createassetimformation(aimformation);
         //}
+
+        //[TestMethod]
+        //public void TestMethod7()
+        //{
+        //    Accessor accessor = Accessor.Instance;
+        //    Users user = accessor.GetUsersById(0);
+        //    user.email = "gefeg";
+        //    user.name = "ziji";
+        //    accessor.UpdateUsers(user);
+        //}
+        //[TestMethod]
+        ////public void TestMethod8()
+        ////{
+        ////    Accessor accessor = Accessor.Instance;
+        ////    IList<Users> s = accessor.GetUsersByFirstname("ziji");
+        ////    Assert.AreEqual(2, s.Count);
+            
+        ////}
     }
 }
