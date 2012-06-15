@@ -64,7 +64,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "类别",
-            "名称",
+            "name",
             "使用部门",
             "保管部门",
             "增添日期",

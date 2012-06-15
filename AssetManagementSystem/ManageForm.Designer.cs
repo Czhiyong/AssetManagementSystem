@@ -40,9 +40,10 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "类别",
-            "名称",
+            "name",
+            "宣传部",
             "使用部门",
-            "保管部门",
+            "safedepartment",
             "增添日期",
             "已删除",
             "在库",
@@ -79,6 +80,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "查询";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // listView1
             // 
